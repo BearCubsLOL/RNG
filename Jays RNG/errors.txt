@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 8: invalid syntax
-    global check_inventory()
-                           ^
+File "game/script.rpy", line 11: f-string: unmatched '['
+    for_now = f"Gold: {saves.data["gold"]}"
+                                    ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Wed May 22 12:51:14 2024
+Wed May 22 13:41:02 2024

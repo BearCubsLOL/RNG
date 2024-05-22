@@ -1,4 +1,4 @@
-{
-    "Health": 50,
+data = {
+    "Health": 520,
     "Invantory": ["HealthPot", "ManaPot"]
 }

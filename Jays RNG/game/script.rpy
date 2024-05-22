@@ -1,20 +1,23 @@
-﻿python:
+﻿init python:
     import random
-    import json
+    import all_saves
 
 
 define e = Character("Eileen")
+define idk = Character("Hi")
 
 
 label start:
-    python:
-        with open("all_saves.txt") as f:
-            data = json.load(f)
+    $ for_now = "Health:" + str(all_saves.data["Health"])
+    
+    idk "[for_now]"
 
-        def check_inventory():
-            if data["coins"] == 50:
-                renpy.jump.idk
-    $ check_inventory()
+    $ all_saves.data["Health"] += 50
+
+    $ for_now = "Health:" + str(all_saves.data["Health"])
+    
+    idk "[for_now]"
+
     jump inventory
     
 label inventory:
