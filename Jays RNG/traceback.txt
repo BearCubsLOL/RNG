@@ -1,26 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 15, in script
-    $ all_saves.data["health"] += 50
-  File "game/script.rpy", line 15, in <module>
-    $ all_saves.data["health"] += 50
-KeyError: 'health'
+  File "game/inventory.rpy", line 11, in script
+    python:
+  File "game/inventory.rpy", line 13, in <module>
+    for items in inventory:
+NameError: name 'inventory' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 15, in script
-    $ all_saves.data["health"] += 50
-  File "C:\Program Files\renpy-8.2.1-sdk\renpy\ast.py", line 823, in execute
+  File "game/inventory.rpy", line 11, in script
+    python:
+  File "C:\Users\Jpays\OneDrive\Desktop\renpy-8.2.1-sdk\renpy\ast.py", line 823, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Program Files\renpy-8.2.1-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+  File "C:\Users\Jpays\OneDrive\Desktop\renpy-8.2.1-sdk\renpy\python.py", line 1178, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "game/script.rpy", line 15, in <module>
-    $ all_saves.data["health"] += 50
-KeyError: 'health'
+  File "game/inventory.rpy", line 13, in <module>
+    for items in inventory:
+NameError: name 'inventory' is not defined
 
-Windows-10-10.0.19045 AMD64
+Windows-10-10.0.22621 AMD64
 Ren'Py 8.2.1.24030407
 Jays RNG 1.0
-Wed May 22 13:47:50 2024
+Wed May 22 19:46:21 2024

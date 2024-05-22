@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 11: f-string: unmatched '['
-    for_now = f"Gold: {saves.data["gold"]}"
-                                    ^
+File "game/inventory.rpy", line 17: reached end of line when expecting ':'.
+    if item[]
+             ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Wed May 22 13:41:02 2024
+Wed May 22 19:41:49 2024

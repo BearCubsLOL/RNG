@@ -1,4 +1,4 @@
 data = {
     "Health": 520,
-    "Invantory": ["HealthPot", "ManaPot"]
+    "Inventory": ["HealthPot", "ManaPot"]
 }

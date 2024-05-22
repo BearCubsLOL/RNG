@@ -6,22 +6,24 @@
 define e = Character("Eileen")
 define idk = Character("Hi")
 
-
+image best = "thebest.png"
 label start:
-    $ for_now = "Health:" + str(all_saves.data["Health"])
     
-    idk "[for_now]"
+    call screen mapScreen
 
-    $ all_saves.data["Health"] += 50
+    # $ for_now = "Health:" + str(all_saves.data["Health"])
 
-    $ for_now = "Health:" + str(all_saves.data["Health"])
-    
-    idk "[for_now]"
+    # idk "[for_now]"
 
-    jump inventory
-    
-label inventory:
-    "idk rn"
+    # $ all_saves.data["Health"] += 50
+
+    # $ for_now = "Health:" + str(all_saves.data["Health"])
+
+    # idk "[for_now]"
+
+    # jump inventory
+    return
 
 label idk:
     "dude"
+    return
