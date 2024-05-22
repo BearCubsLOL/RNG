@@ -1,0 +1,26 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 10, in script
+    python:
+  File "game/script.rpy", line 11, in <module>
+    with open("all_saves.txt") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'all_saves.txt'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 10, in script
+    python:
+  File "C:\Program Files\renpy-8.2.1-sdk\renpy\ast.py", line 823, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Program Files\renpy-8.2.1-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 11, in <module>
+    with open("all_saves.txt") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'all_saves.txt'
+
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.2.1.24030407
+Jays RNG 1.0
+Wed May 22 12:56:27 2024
